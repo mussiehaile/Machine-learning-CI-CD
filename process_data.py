@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv(r"/home/mussie/Music/home projects/final cI _cd/data.csv")
+df = pd.read_csv("data.csv")
 
 all_features = df.columns
 
