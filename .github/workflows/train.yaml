@@ -1,5 +1,6 @@
 name: classification
 on: [push]
+permissions: read-all
 jobs:
   run:
     runs-on: [ubuntu-latest]
@@ -19,5 +20,5 @@ jobs:
           # Add figure to the report
           echo "## Validating results by region"
           cml-publish by_region.png --md >> report.md
-          # cml-send-comment report.md
-          cml comment create --publish report.md
+          cml-send-comment report.md
+          
