@@ -1,6 +1,9 @@
 name: classification
 on: [push]
-permissions: read-all
+permissions:
+  contents: write
+  pull-requests: write
+  checks: write
 jobs:
   run:
     runs-on: [ubuntu-latest]
